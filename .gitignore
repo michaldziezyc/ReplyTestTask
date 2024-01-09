@@ -9,3 +9,9 @@ net6.0/
 *.pdb
 *.cache
 *.tmp
+Reply/.vs/Reply/v17/.suo
+Reply/Reply.Specs/obj/Debug/net6.0/Reply.Specs.AssemblyInfo.cs
+Reply/Reply.Specs/obj/Debug/net6.0/Reply.Specs.AssemblyInfoInputs.cache
+Reply/Reply.Specs/obj/Debug/net6.0/Reply.Specs.csproj.AssemblyReference.cache
+Reply/Reply/obj/Debug/net6.0/Reply.AssemblyInfo.cs
+Reply/Reply/obj/Debug/net6.0/Reply.AssemblyInfoInputs.cache
