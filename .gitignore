@@ -1,10 +1,6 @@
+*.tmp
 *.vsidx
-Reply/.vs/Reply/v17/.suo
-*.tmp
-*.cache
+*.suo
 net6.0/
-*.pdb
-*.cache
-*.tmp
-Reply/.vs/Reply/v17/.suo
-net6.0/
+Reply/Reply.Specs/obj/Debug/net6.0/
+*.testlog
