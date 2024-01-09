@@ -52,28 +52,20 @@ namespace Reply.Tools
             switch (browser)
             {
                 case "Chrome":
-                    ChromeOptions chromeOptions = new ChromeOptions();
-                    chromeOptions.AddArgument("start-maximized");
-
-                    driver = new ChromeDriver(chromeOptions);
+                    driver = new ChromeDriver(new ChromeOptions());
                     break;
 
                 case "Firefox":
-                    FirefoxOptions firefoxOptions = new FirefoxOptions();
-                    firefoxOptions.AddArgument("--width=1920");
-                    firefoxOptions.AddArgument("--height=1080");
-
-                    driver = new FirefoxDriver(firefoxOptions);
+                    driver = new FirefoxDriver(new FirefoxOptions());
 
                     break;
 
                 case "Edge":
-                    EdgeOptions edgeOptions = new EdgeOptions();
-                    edgeOptions.AddArgument("start-maximized");
-
-                    driver = new EdgeDriver(edgeOptions);
+                    driver = new EdgeDriver(new EdgeOptions());
                     break;
             }
+
+            driver.Manage().Window.Maximize();
             return driver;
         }
     }
