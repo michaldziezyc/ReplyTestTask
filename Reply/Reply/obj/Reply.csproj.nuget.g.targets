@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.0\buildTransitive\net6.0\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.msedgedriver\119.0.2151.42\build\Selenium.WebDriver.MSEdgeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.msedgedriver\119.0.2151.42\build\Selenium.WebDriver.MSEdgeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.geckodriver\0.34.0\build\Selenium.WebDriver.GeckoDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.geckodriver\0.34.0\build\Selenium.WebDriver.GeckoDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver.chromedriver\120.0.6099.10900\build\Selenium.WebDriver.ChromeDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver.chromedriver\120.0.6099.10900\build\Selenium.WebDriver.ChromeDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver\4.16.2\buildTransitive\Selenium.WebDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver\4.16.2\buildTransitive\Selenium.WebDriver.targets')" />
+  </ImportGroup>
+</Project>
