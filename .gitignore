@@ -2,3 +2,7 @@
 *.vsidx
 *.vsidx
 *.vsidx
+Reply/.vs/Reply/v17/.suo
+*.tmp
+*.cache
+*/net6.0/*
