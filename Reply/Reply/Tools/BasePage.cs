@@ -3,6 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System.Diagnostics;
@@ -51,15 +52,26 @@ namespace Reply.Tools
             switch (browser)
             {
                 case "Chrome":
-                    driver = new ChromeDriver(new ChromeOptions());
+                    ChromeOptions chromeOptions = new ChromeOptions();
+                    chromeOptions.AddArgument("start-maximized");
+
+                    driver = new ChromeDriver(chromeOptions);
                     break;
 
                 case "Firefox":
-                    driver = new FirefoxDriver(new FirefoxOptions());
+                    FirefoxOptions firefoxOptions = new FirefoxOptions();
+                    firefoxOptions.AddArgument("--width=1920");
+                    firefoxOptions.AddArgument("--height=1080");
+
+                    driver = new FirefoxDriver(firefoxOptions);
+
                     break;
 
                 case "Edge":
-                    driver = new EdgeDriver(new EdgeOptions());
+                    EdgeOptions edgeOptions = new EdgeOptions();
+                    edgeOptions.AddArgument("start-maximized");
+
+                    driver = new EdgeDriver(edgeOptions);
                     break;
             }
             return driver;
