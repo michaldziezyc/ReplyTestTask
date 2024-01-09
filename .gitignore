@@ -1,6 +1,3 @@
-
-*.vsidx
-*.vsidx
 *.vsidx
 Reply/.vs/Reply/v17/.suo
 *.tmp
@@ -10,4 +7,4 @@ net6.0/
 *.cache
 *.tmp
 Reply/.vs/Reply/v17/.suo
-Reply/Reply/obj/Debug/net6.0/
+net6.0/
