@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using Reply.Tools;
 
 namespace Reply.PageObjectPattern
@@ -19,7 +20,7 @@ namespace Reply.PageObjectPattern
         {
             filterField.SendKeys($"{firstName} {lastName}");
             filterField.SendKeys(Keys.Enter);
-            Thread.Sleep(1000);
+            new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(e => listOfCustomerNames.Count != 20);
 
             Assert.That(listOfCustomerNames.Count, Is.EqualTo(1));
             listOfCustomerNames.First().Click();

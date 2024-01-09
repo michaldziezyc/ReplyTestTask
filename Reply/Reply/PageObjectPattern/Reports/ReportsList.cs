@@ -1,5 +1,6 @@
 ﻿using NUnit.Framework;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 using Reply.Tools;
 
 namespace Reply.PageObjectPattern
@@ -17,7 +18,7 @@ namespace Reply.PageObjectPattern
         {
             filterField.SendKeys($"{reportName}");
             filterField.SendKeys(Keys.Enter);
-            Thread.Sleep(1000);
+            new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(e => listOfReports.Count != 20);
 
             Assert.That(listOfReports.Count, Is.EqualTo(1));
             listOfReports.First().Click();
