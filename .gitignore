@@ -5,8 +5,7 @@
 Reply/.vs/Reply/v17/.suo
 *.tmp
 *.cache
-*\net6.0\*
+net6.0/
 *.pdb
 *.cache
 *.tmp
-Reply/.vs/Reply/v17/.suo
