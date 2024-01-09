@@ -4,3 +4,4 @@
 net6.0/
 Reply/Reply.Specs/obj/Debug/net6.0/
 *.testlog
+*.cache
