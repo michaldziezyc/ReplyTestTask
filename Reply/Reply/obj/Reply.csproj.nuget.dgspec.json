@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Michal\\source\\repos\\Reply\\Reply\\Reply.csproj": {}
+    "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Michal\\source\\repos\\Reply\\Reply\\Reply.csproj": {
+    "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Michal\\source\\repos\\Reply\\Reply\\Reply.csproj",
+        "projectUniqueName": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj",
         "projectName": "Reply",
-        "projectPath": "C:\\Users\\Michal\\source\\repos\\Reply\\Reply\\Reply.csproj",
+        "projectPath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj",
         "packagesPath": "C:\\Users\\Michal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Michal\\source\\repos\\Reply\\Reply\\obj\\",
+        "outputPath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

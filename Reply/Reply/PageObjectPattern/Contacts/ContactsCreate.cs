@@ -19,6 +19,9 @@ namespace Reply.PageObjectPattern
 
         private IWebElement roleDropDownList => Find(By.Id("DetailFormbusiness_role-input"));
 
+        private By roleSearchFieldLocator => By.XPath("//div[@id='DetailFormcategories-input-search-text']//input");
+        private IWebElement roleSearchField => Find(roleSearchFieldLocator);
+
         private By availableRolesLocator = By.XPath("//div[@class='menu-option single']");
         private IList<IWebElement> availableRoles => FindMultiple(availableRolesLocator).ToList();
 
@@ -35,7 +38,7 @@ namespace Reply.PageObjectPattern
         public void ChooseCustomerRole(string role)
         {
             roleDropDownList.Click();
-            new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(availableRolesLocator));
+            Thread.Sleep(1000);
             availableRoles.First(e => e.Text == role).Click();
         }
 
@@ -46,9 +49,12 @@ namespace Reply.PageObjectPattern
             {
                 categoryDropDownList.Click();
 
-                IWebElement element = Find(By.XPath($"//div[contains(@class, 'option-cell input-label') and text() = '{category}']"));
-                new Actions(driver).MoveToElement(element).Perform();
-                element.Click();
+                new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(roleSearchFieldLocator));
+
+                roleSearchField.SendKeys(category);
+
+                Find(By.XPath($"//div[contains(@class, 'option-cell input-label') and text() = '{category}']")).Click();
+
                 Thread.Sleep(500);
             }
         }

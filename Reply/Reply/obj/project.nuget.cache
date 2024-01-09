@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "a4UBCHCQxRYb5yarnctj0Mca1DIP6E7flt9vH4qO6xlgQaFEfT1s3CSKcdBQ3ncZL3QHQVMx1g4ljBDH0eV8SQ==",
+  "dgSpecHash": "3L9NCbMKFPxuJAe/tNiBJc9RXZK2Y6E6rxXbivLITftk7HB8uFJKZJez+gZwNztZfHIZVUUV900z9YZ4wo0jFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Michal\\source\\repos\\Reply\\Reply\\Reply.csproj",
+  "projectFilePath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michal\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",
     "C:\\Users\\Michal\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",

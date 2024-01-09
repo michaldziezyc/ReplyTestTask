@@ -33,6 +33,12 @@ namespace Reply.Specs.StepDefinitions
         public static void StartFromDashboard()
         {
             driver.FindElement(By.XPath("//a//div[contains(text(),' Activities')]")).Click();
+            try
+            {
+                driver.SwitchTo().Alert().Accept();
+            }
+            catch (Exception ex) { }
+            _ = new Dashboard(driver);
         }
 
         [AfterTestRun]
@@ -47,7 +53,7 @@ namespace Reply.Specs.StepDefinitions
 
         private string contactFirstName = RandomHelpers.RandomString(8);
         private string contactLastName = RandomHelpers.RandomString(8);
-        private string role = "CFO";
+        private string role = "Sales";
 
         [Given(@"I go to Sales&Marketing->Contacts")]
         public void GivenIGoToSalesMarketing_Contacts()
