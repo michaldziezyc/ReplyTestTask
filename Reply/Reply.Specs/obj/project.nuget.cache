@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "cDwbXksE4MoIxe/ztbku/d5BIsbY6d1RLyZA8PojfeljkDERtmgA1PSFeBBrlvKXk6rjd5A5jy+0dP4shU8L+A==",
+  "dgSpecHash": "OPCWmQt36XA+eaKV9SF1Fckloo1fN+u2VX+/rcuFfO+I/5pGVoy5JiHSaiVoGs2jidJwec7sZtvS0JIXRux0sA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply.Specs\\Reply.Specs.csproj",
+  "projectFilePath": "C:\\Users\\Michal\\Documents\\GitHub\\ReplyTestTask\\Reply\\Reply.Specs\\Reply.Specs.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Michal\\.nuget\\packages\\bodi\\1.5.0\\bodi.1.5.0.nupkg.sha512",
     "C:\\Users\\Michal\\.nuget\\packages\\dotnetseleniumextras.waithelpers\\3.11.0\\dotnetseleniumextras.waithelpers.3.11.0.nupkg.sha512",

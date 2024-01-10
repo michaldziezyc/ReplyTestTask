@@ -6350,11 +6350,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply.Specs\\Reply.Specs.csproj",
+      "projectUniqueName": "C:\\Users\\Michal\\Documents\\GitHub\\ReplyTestTask\\Reply\\Reply.Specs\\Reply.Specs.csproj",
       "projectName": "Reply.Specs",
-      "projectPath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply.Specs\\Reply.Specs.csproj",
+      "projectPath": "C:\\Users\\Michal\\Documents\\GitHub\\ReplyTestTask\\Reply\\Reply.Specs\\Reply.Specs.csproj",
       "packagesPath": "C:\\Users\\Michal\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply.Specs\\obj\\",
+      "outputPath": "C:\\Users\\Michal\\Documents\\GitHub\\ReplyTestTask\\Reply\\Reply.Specs\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -6375,8 +6375,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj": {
-              "projectPath": "C:\\Users\\Michal\\Documents\\GitHub\\testoweRepo\\Reply\\Reply\\Reply.csproj"
+            "C:\\Users\\Michal\\Documents\\GitHub\\ReplyTestTask\\Reply\\Reply\\Reply.csproj": {
+              "projectPath": "C:\\Users\\Michal\\Documents\\GitHub\\ReplyTestTask\\Reply\\Reply\\Reply.csproj"
             }
           }
         }
