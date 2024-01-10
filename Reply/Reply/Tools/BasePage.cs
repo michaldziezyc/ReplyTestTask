@@ -52,7 +52,6 @@ namespace Reply.Tools
 
                 case "Firefox":
                     driver = new FirefoxDriver(new FirefoxOptions());
-
                     break;
 
                 case "Edge":

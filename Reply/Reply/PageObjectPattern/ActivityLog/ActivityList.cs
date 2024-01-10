@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Support.UI;
 using Reply.Tools;
 using SeleniumExtras.WaitHelpers;
 
