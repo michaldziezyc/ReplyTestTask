@@ -20,7 +20,7 @@ namespace Reply.PageObjectPattern
         {
             filterField.SendKeys($"{firstName} {lastName}");
             filterField.SendKeys(Keys.Enter);
-            new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(e => listOfCustomerNames.Count != 20);
+            Wait(driver).Until(e => listOfCustomerNames.Count != 20);
 
             Assert.That(listOfCustomerNames.Count, Is.EqualTo(1));
             listOfCustomerNames.First().Click();

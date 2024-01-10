@@ -18,7 +18,7 @@ namespace Reply.PageObjectPattern
         {
             filterField.SendKeys($"{reportName}");
             filterField.SendKeys(Keys.Enter);
-            new WebDriverWait(driver, TimeSpan.FromSeconds(5)).Until(e => listOfReports.Count != 20);
+            Wait(driver).Until(e => listOfReports.Count != 20);
 
             Assert.That(listOfReports.Count, Is.EqualTo(1));
             listOfReports.First().Click();

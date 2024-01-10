@@ -49,7 +49,7 @@ namespace Reply.PageObjectPattern
             {
                 categoryDropDownList.Click();
 
-                new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(roleSearchFieldLocator));
+                Wait(driver).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(roleSearchFieldLocator));
 
                 roleSearchField.SendKeys(category);
 

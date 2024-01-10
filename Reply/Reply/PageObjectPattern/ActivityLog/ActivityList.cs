@@ -29,7 +29,7 @@ namespace Reply.PageObjectPattern
         public void DeleteLogs()
         {
             ActionsDropDown.Click();
-            new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(DeleteOptionLocator));
+            Wait(driver).Until(ExpectedConditions.VisibilityOfAllElementsLocatedBy(DeleteOptionLocator));
             DeleteOption.Click();
 
             driver.SwitchTo().Alert().Accept();

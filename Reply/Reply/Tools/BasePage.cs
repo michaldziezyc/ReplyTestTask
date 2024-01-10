@@ -1,9 +1,7 @@
-﻿using Microsoft.Extensions.Configuration;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Firefox;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Support.UI;
 using SeleniumExtras.WaitHelpers;
 using System.Diagnostics;
@@ -15,7 +13,6 @@ namespace Reply.Tools
     {
         protected IWebDriver driver = null;
         public static readonly By ListLocator = By.XPath("//span[@class='detailLink']//a[@class='listViewNameLink']");
-        public static IConfigurationRoot settings = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
         protected BasePage(IWebDriver webDriver, string url)
         {
@@ -23,8 +20,8 @@ namespace Reply.Tools
 
             try
             {
-                new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(ExpectedConditions.UrlContains(url));
-                new WebDriverWait(driver, TimeSpan.FromSeconds(10)).Until(driver => ((IJavaScriptExecutor)driver).ExecuteScript("return document.readyState").Equals("complete"));
+                Wait(driver).Until(ExpectedConditions.UrlContains(url));
+                Wait(driver).Until(driver => ((IJavaScriptExecutor)driver).ExecuteScript("return document.readyState").Equals("complete"));
             }
             catch (Exception e)
             { Debug.WriteLine("Wrong URL or Page not ready"); }
@@ -44,8 +41,6 @@ namespace Reply.Tools
         {
             return driver.FindElements(locator).ToList();
         }
-
-        public IConfigurationRoot settingss = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
 
         public IWebDriver GetWebDriver(string browser)
         {
@@ -67,6 +62,11 @@ namespace Reply.Tools
 
             driver.Manage().Window.Maximize();
             return driver;
+        }
+
+        public WebDriverWait Wait(IWebDriver driver)
+        {
+            return new WebDriverWait(driver, TimeSpan.FromSeconds(10));
         }
     }
 }
